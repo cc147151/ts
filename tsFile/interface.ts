@@ -87,7 +87,7 @@ square.color='blue'
 square.sideLength=11
 square.sideLength=22
 
-// 混合类型 接口可以描述javaScript里丰富的类型 一个对象可以同时作为函数和对象的使用,bing'dai'you
+// 混合类型 接口可以描述javaScript里丰富的类型 一个对象可以同时作为函数和对象的使用
 interface Counter {
     // 定义一个函数类型
     (start:number):string;
@@ -113,9 +113,11 @@ f4(444)
 class Control {
     private state: any;
 }
-
 interface SelectableControl extends Control {
- 
     select(): void;
 }
-let sss:SelectableControl;
+
+// error
+// class Image implements SelectableControl {
+//     select()
+// }
